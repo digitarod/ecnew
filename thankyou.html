@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>送信完了</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      font-family: sans-serif;
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>ご回答ありがとうございました！</h1>
+  <p>ご協力に感謝いたします。</p>
+  <button onclick="goBack()">戻る</button>
+
+  <script>
+    function goBack() {
+      // 直接元のページへ戻す。フォームページが「index.html」の場合。
+      window.location.href = "index.html";
+      // もしくは履歴を戻す場合（前のページが確実にフォームなら）
+      // history.back();
+    }
+  </script>
+</body>
+</html>
